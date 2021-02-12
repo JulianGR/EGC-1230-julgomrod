@@ -23,3 +23,11 @@ notifications:
       - juliangr505@gmail.com
     on_success: always
     on_failure: always
+deploy:
+  provider: heroku
+  app: examen-egc-julgomrod
+  strategy: git
+  api_key:
+    secure: XXX
+  on:
+    branch: master
